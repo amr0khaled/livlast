@@ -1,0 +1,35 @@
+@import '../../index.css';
+
+@layer components {
+  .search {
+    @apply relative;
+
+    .search-header {
+      @apply absolute bg-background bottom-0 -translate-y-1/2 left-1/2 -translate-x-1/2 py-8 px-4 rounded-2xl shadow-lg;
+
+      .search-section {
+        @apply flex flex-col gap-3 justify-center items-center;
+
+        .search-row {
+          @apply flex gap-3;
+        }
+      }
+    }
+
+    .search-main {
+      @apply px-16;
+
+      .search-bar {
+        @apply w-full flex justify-between items-center mb-12;
+
+        .search-status {
+          @apply text-black/60 font-[Poppins] font-medium text-sm;
+        }
+
+        .search-results {
+          @apply text-black
+        }
+      }
+    }
+  }
+}
