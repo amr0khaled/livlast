@@ -1,0 +1,19 @@
+@import '../../index.css';
+
+@layer components {
+  .header {
+    @apply w-screen h-fit py-2 flex justify-center items-center bg-red-100;
+
+    .navbar {
+      @apply max-w-3/4 min-w-7/9 flex justify-between items-center bg-background px-6 py-2 rounded-full;
+
+      .logo {
+        @apply font-serif font-semibold text-3xl
+      }
+
+      .sign-up {
+        @apply bg-foreground text-background
+      }
+    }
+  }
+}
