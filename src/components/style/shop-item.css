@@ -1,0 +1,51 @@
+@import '../../index.css';
+
+@layer components {
+  .shop-item-card {
+    @apply max-w-80 min-w-72 my-2 mx-2;
+
+    .item-main {
+      @apply flex flex-col gap-4;
+
+      .item-image {
+        @apply rounded-xl overflow-hidden;
+
+        img {
+          @apply object-cover;
+        }
+      }
+
+      .item-title {
+        @apply text-3xl font-[Poppins] font-medium;
+      }
+
+      .item-location {
+        @apply flex gap-1 text-sm text-black/60;
+
+        svg {
+          @apply size-4
+        }
+      }
+
+      .item-details {
+        @apply flex h-5 gap-3;
+
+        .item-info {
+          @apply flex items-center gap-1 text-sm text-black/60;
+
+          svg {
+            @apply size-4
+          }
+        }
+      }
+    }
+
+    .item-footer {
+      @apply mt-3 flex justify-between;
+
+      .item-price {
+        @apply text-green-600 font-[Poppins] text-xl
+      }
+    }
+  }
+}
