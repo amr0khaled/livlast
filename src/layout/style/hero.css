@@ -1,0 +1,51 @@
+@import '../../index.css';
+
+@layer components {
+  .hero {
+    @apply -mt-17 relative mb-30;
+
+    .hero-img {
+      @apply object-cover w-[34%] absolute z-10;
+
+      &:first-of-type {
+        @apply bottom-0 -right-30 w-[40%];
+      }
+
+      &:last-of-type {
+        @apply bottom-0 left-0;
+      }
+    }
+
+    .hero-main {
+      @apply min-h-screen flex justify-center items-center relative bg-indigo-50;
+    }
+  }
+
+  .section-1 {
+    @apply z-10;
+
+    header {
+      @apply flex flex-col gap-8;
+
+      h1 {
+        @apply text-7xl font-[Playfair_Display] font-bold text-center z-30;
+      }
+
+      p {
+        @apply text-center font-[Poppins] text-black/60
+      }
+    }
+  }
+
+  .hero-footer {
+    @apply absolute bg-background bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 py-8 px-4 rounded-2xl shadow-lg;
+
+    .hero-search {
+      @apply flex flex-col gap-3 justify-center items-center;
+
+      .search-row {
+        @apply flex gap-3;
+      }
+    }
+  }
+}

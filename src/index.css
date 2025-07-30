@@ -1,6 +1,24 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 400 900;
+  font-stretch: 1% 1000%;
+  font-display: swap;
+  font-variation-settings: 'wght' 400 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(/assets/fonts/Quicksand-Regular.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -114,7 +132,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .divider {
+    @apply w-full h-px bg-foreground/60 my-12
   }
 }
