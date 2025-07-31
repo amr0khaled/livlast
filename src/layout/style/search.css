@@ -2,10 +2,10 @@
 
 @layer components {
   .search {
-    @apply relative;
+    @apply relative z-50 flex flex-col;
 
     .search-header {
-      @apply absolute bg-background bottom-0 -translate-y-1/2 left-1/2 -translate-x-1/2 py-8 px-4 rounded-2xl shadow-lg;
+      @apply w-fit flex place-self-center bg-background top-0 -translate-y-[150%] py-8 px-12 rounded-2xl shadow-lg z-50 mb-12;
 
       .search-section {
         @apply flex flex-col gap-3 justify-center items-center;
@@ -29,6 +29,18 @@
         .search-results {
           @apply text-black
         }
+      }
+
+      .search-items {
+        @apply w-full grid grid-cols-3 gap-2 gap-y-4 mb-12;
+
+        .shop-item-card {
+          @apply place-self-center
+        }
+      }
+
+      .search-pagination {
+        @apply mb-12;
       }
     }
   }
