@@ -16,7 +16,7 @@
       }
 
       .item-title {
-        @apply text-3xl font-[Poppins] font-medium;
+        @apply text-3xl font-[Poppins] font-medium truncate;
       }
 
       .item-location {

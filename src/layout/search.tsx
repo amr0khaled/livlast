@@ -10,76 +10,76 @@ import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, Pagi
 
 let items: ShopItemType[] = [
   {
-    title: "Card 1",
+    title: "Modern townhouse white theme",
     img: '/assets/images/card-1.jpg',
-    location: "Texas",
-    price: 5000,
+    location: "San Jose, California",
+    price: 3_000_000,
     beds: 2,
     baths: 2,
-    size: 1200
+    size: 3400
   },
   {
-    title: "Card 2",
+    title: "Small classic village house",
     img: '/assets/images/card-2.jpg',
-    location: "Texas",
-    price: 5000,
+    location: "Salt Lake City, Utah",
+    price: 2_400_000,
     beds: 2,
     baths: 2,
-    size: 1200
+    size: 1800
   },
   {
-    title: "Card 3",
+    title: "Downtown modern house with wooden theme",
     img: '/assets/images/card-3.jpg',
-    location: "Texas",
-    price: 5000,
+    location: "San Fransisco, California",
+    price: 2_800_000,
     beds: 2,
     baths: 2,
-    size: 1200
+    size: 2400
   },
   {
-    title: "Card 4",
+    title: "Decorated white townhouse",
     img: '/assets/images/card-4.jpg',
-    location: "Texas",
-    price: 5000,
-    beds: 2,
-    baths: 2,
-    size: 1200
+    location: "Los Angeles, California",
+    price: 3_00_000,
+    beds: 4,
+    baths: 3,
+    size: 2500
   },
   {
-    title: "Card 5",
+    title: "Comfy residential house",
     img: '/assets/images/card-5.jpg',
-    location: "Texas",
-    price: 5000,
-    beds: 2,
+    location: "Queens, New York",
+    price: 1_200_000,
+    beds: 3,
     baths: 2,
-    size: 1200
+    size: 2100
   },
   {
-    title: "Card 6",
+    title: "Small wooden house",
     img: '/assets/images/card-6.jpg',
-    location: "Texas",
-    price: 5000,
-    beds: 2,
-    baths: 2,
-    size: 1200
+    location: "Phoenix, Arizona",
+    price: 20,
+    beds: 1,
+    baths: 1,
+    size: 0.5
   },
   {
-    title: "Card 7",
+    title: "Stylish modern house",
     img: '/assets/images/card-7.jpg',
-    location: "Texas",
-    price: 5000,
-    beds: 2,
-    baths: 2,
+    location: "Miami, Florida",
+    price: 800_000,
+    beds: 3,
+    baths: 1,
     size: 1200
   },
   {
-    title: "Card 8",
+    title: "Silver-themed modern house",
     img: '/assets/images/card-8.jpg',
-    location: "Texas",
-    price: 5000,
-    beds: 2,
+    location: "Austin, Texas",
+    price: 3_800_000,
+    beds: 4,
     baths: 2,
-    size: 1200
+    size: 3800
   },
 ]
 const max = items.length * 4

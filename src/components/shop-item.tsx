@@ -48,7 +48,7 @@ export default function ShopItem({ item }: Props) {
       </span>
     </main>
     <footer className='item-footer'>
-      <span className='item-price'>${item.price}</span>
+      <span className='item-price'>${item.price.toLocaleString('en-US')}</span>
       <Button size='sm' variant={'outline'}>Invest now</Button>
     </footer>
   </section>
