@@ -2,7 +2,7 @@
 
 @layer components {
   .hero {
-    @apply -mt-17 relative mb-30;
+    @apply -mt-17 relative overflow-hidden mb-4;
 
     .hero-img {
       @apply object-cover w-[34%] absolute z-10;
