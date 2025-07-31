@@ -130,7 +130,7 @@ export default function Search() {
   })
   const [searchFilter, setSearchFilter] = useState('popular')
   return <section className='search'>
-    <header className='search-header'>
+    <header className='search-header' id='search'>
       <section className='search-section'>
         <div className='search-row gap-0'>
           <Input className='w-50 rounded-e-none' type='text' placeholder='Enter address' />

@@ -5,11 +5,16 @@ import { useState } from 'react'
 export default function Header() {
   const [items] = useState([
     'Home',
-    'About',
-    'Contact Us',
+    'Search',
     'Log in',
     'Join us'
   ])
+  const [hrefs] = useState<{ [key: string]: string }>({
+    home: '#home',
+    search: '#search',
+    login: '#',
+    joinus: '#'
+  })
   return <header className='header'>
     <div className='navbar'>
       <span className='logo'>Livlast</span>
@@ -17,7 +22,11 @@ export default function Header() {
         <NavigationMenuList>
           {items.map((e, i) => <NavigationMenuItem key={i}>
             <NavigationMenuLink asChild>
-              <a className={`nav-link ${items.length - 1 === i ? 'sign-up' : ''}`}>{e}</a>
+              <a
+                href={hrefs[
+                  e.toLowerCase().split(' ').join('')
+                ]}
+                className={`nav-link ${items.length - 1 === i ? 'join' : ''}`}>{e}</a>
             </NavigationMenuLink>
           </NavigationMenuItem>
           )}

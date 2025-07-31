@@ -1,7 +1,7 @@
 
 import './style/hero.css'
 export default function Hero() {
-  return <section className='hero'>
+  return <section className='hero' id='home'>
     <main className='hero-main'>
       <img className='hero-img' src='/assets/images/hero-2.png' alt='' />
       <img className='hero-img' src='/assets/images/hero-3.png' alt='' />
