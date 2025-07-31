@@ -1,3 +1,4 @@
+import Footer from './layout/footer'
 import Header from './layout/header'
 import Hero from './layout/hero'
 import Search from './layout/search'
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <Search />
+      <Footer />
     </>
   )
 }

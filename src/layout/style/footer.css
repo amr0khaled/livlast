@@ -1,0 +1,78 @@
+@import '../../index.css';
+
+@layer components {
+  .footer {
+    @apply w-full;
+
+    .footer-header {
+      @apply w-full h-96 flex justify-center items-center;
+      @apply bg-linear-to-tr from-green-100 from-10% via-pink-50 to-purple-100 to-90%;
+
+      .header-title {
+        @apply text-7xl font-[Poppins] font-semibold text-center;
+      }
+    }
+
+    .footer-main,
+    .footer-rights,
+    .footer-logo {
+      @apply bg-primary text-primary-foreground/60;
+    }
+
+    .footer-main {
+      @apply w-full h-96 flex flex-1 justify-evenly items-center p-12;
+
+      .main-side {
+        @apply h-full flex flex-1 flex-col justify-start items-start gap-16;
+
+        .quote {
+          @apply w-4/5 font-[Poppins] text-lg text-primary-foreground/80 select-none;
+        }
+
+        .icons-list {
+          .icons-items {
+            button {
+              @apply cursor-pointer;
+
+              svg {
+                @apply size-8;
+              }
+
+              &:hover {
+                @apply -translate-y-1
+              }
+            }
+          }
+        }
+      }
+
+      .footer-aside {
+        @apply h-full flex flex-1 justify-between items-start mr-12;
+
+        .aside-list {
+          @apply flex flex-col gap-6;
+
+          .aside-item a button {
+            @apply cursor-pointer;
+          }
+        }
+      }
+    }
+
+    .footer-rights {
+      @apply w-full flex justify-center items-center;
+    }
+
+    .footer-logo {
+      @apply w-full pt-8 flex justify-center pb-8 overflow-hidden;
+      @apply text-[340px] font-[Playfair_Display];
+
+      .logo {
+        transform: matrix3d(1, 0, 0, 0,
+            0, 1, 0, -0.0016,
+            0, 0, 1, 0,
+            0, 0, 0, 1);
+      }
+    }
+  }
+}
