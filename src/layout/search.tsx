@@ -217,16 +217,14 @@ export default function Search() {
             <PaginationItem>
               <PaginationEllipsis />
             </PaginationItem>
-            <PaginationItem>
-              {paginationIndex + 5 < maxPaginationIndex &&
-                <PaginationItem>
-                  <PaginationLink
-                    onClick={() =>
-                      selectPagination(paginationIndex + 5)}>
-                    {paginationIndex + 5}
-                  </PaginationLink>
-                </PaginationItem>}
-            </PaginationItem>
+            {paginationIndex + 5 < maxPaginationIndex &&
+              <PaginationItem>
+                <PaginationLink
+                  onClick={() =>
+                    selectPagination(paginationIndex + 5)}>
+                  {paginationIndex + 5}
+                </PaginationLink>
+              </PaginationItem>}
             <PaginationItem>
               <PaginationNext onClick={nextPagination} />
             </PaginationItem>
