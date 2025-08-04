@@ -5,14 +5,14 @@
     @apply -mt-17 relative overflow-hidden mb-4;
 
     .hero-img {
-      @apply object-cover w-[34%] absolute z-10;
+      @apply object-cover w-[35%] absolute z-10;
 
       &:first-of-type {
         @apply bottom-0 -right-30 w-[40%];
       }
 
       &:last-of-type {
-        @apply bottom-0 left-0;
+        @apply top-16 left-0;
       }
     }
 
