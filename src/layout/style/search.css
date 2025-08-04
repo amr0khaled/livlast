@@ -2,7 +2,7 @@
 
 @layer components {
   .search {
-    @apply relative z-20 flex flex-col;
+    @apply relative z-20 flex flex-col items-center;
 
     .search-header {
       @apply w-fit flex place-self-center bg-background top-0 rounded-2xl shadow-lg z-50 mb-0;
@@ -63,7 +63,7 @@
     .search-main {
       @apply px-16;
 
-      @apply w-full flex flex-col justify-between items-center mb-12;
+      @apply w-full min-2xl:max-w-[106rem] flex flex-col justify-between items-center mb-12;
 
       .search-bar {
         @apply flex flex-col gap-4 justify-between items-center mb-4;
@@ -79,6 +79,11 @@
 
       .search-items {
         @apply w-full flex flex-col mb-24;
+        /* sm + md */
+        @apply sm:grid grid-cols-2 gap-1 gap-y-3;
+        /* lg */
+        @apply lg:grid-cols-3;
+        @apply 2xl:grid-cols-4;
         /* @apply grid grid-cols-3 gap-2 gap-y-4; */
 
         .shop-item-card {
