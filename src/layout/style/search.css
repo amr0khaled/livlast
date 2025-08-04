@@ -9,14 +9,11 @@
       /* mobile */
       @apply -translate-y-3/5 py-6 px-10;
       /* sm */
-      @apply sm:-translate-y-3/5 sm:py-6 sm:px-10;
+      @apply sm:py-6 sm:px-10;
       /* md */
-      @apply md:-translate-y-3/5 md:py-6 md:px-10;
+      @apply md:py-6 md:px-10;
       /* lg */
-      @apply lg:-translate-y-3/5 lg:py-8 lg:px-12;
-      /* xl */
-      @apply xl:-translate-y-3/5 xl:py-8 xl:px-12;
-      /* 2xl */
+      @apply lg:py-8 lg:px-12;
 
       .search-section {
         @apply flex flex-col justify-center items-center;
@@ -61,12 +58,14 @@
     }
 
     .search-main {
-      @apply px-16;
+      @apply px-8 -mt-24;
+      @apply sm:px-16 sm:-mt-10;
 
       @apply w-full min-2xl:max-w-[106rem] flex flex-col justify-between items-center mb-12;
 
       .search-bar {
         @apply flex flex-col gap-4 justify-between items-center mb-4;
+        @apply sm:flex-row sm:w-full;
 
         .search-status {
           @apply text-black/60 font-[Poppins] font-medium text-sm;
@@ -78,9 +77,9 @@
       }
 
       .search-items {
-        @apply w-full flex flex-col mb-24;
+        @apply w-full flex flex-col mb-24 gap-y-8 gap-1;
         /* sm + md */
-        @apply sm:grid grid-cols-2 gap-1 gap-y-3;
+        @apply sm:grid grid-cols-2 sm:gap-y-3;
         /* lg */
         @apply lg:grid-cols-3;
         @apply 2xl:grid-cols-4;
