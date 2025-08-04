@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className='w-screen flex flex-col z-10'>
         <Hero />
         <Search />
         <Footer />

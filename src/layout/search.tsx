@@ -7,6 +7,7 @@ import './style/search.css'
 import type { ShopItemType } from "@/components/shop-item"
 import ShopItem from "@/components/shop-item"
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination"
+import { Separator } from "@/components/ui/separator"
 
 let items: ShopItemType[] = [
   {
@@ -132,11 +133,11 @@ export default function Search() {
   return <section className='search'>
     <header className='search-header' id='search'>
       <section className='search-section'>
-        <div className='search-row gap-0'>
-          <Input className='w-50 rounded-e-none' type='text' placeholder='Enter address' />
-          <Input className='w-50 rounded-e-none rounded-s-none' type='text' placeholder='Location' />
+        <div className='search-row sm:gap-0'>
+          <Input className='search-input sm:rounded-e-none' type='text' placeholder='Enter address' />
+          <Input className='search-input sm:rounded-e-none sm:rounded-s-none' type='text' placeholder='Location' />
           <Select value={selectedType} onValueChange={e => setSelectedType(e)}>
-            <SelectTrigger className='w-50 rounded-s-none'>
+            <SelectTrigger className='search-input sm:rounded-s-none'>
               <SelectValue placeholder='Property Type' />
             </SelectTrigger>
             <SelectContent>
@@ -148,11 +149,12 @@ export default function Search() {
             </SelectContent>
           </Select>
         </div>
+        <Separator className='search-divider' />
         <div className='search-row'>
-          <Button>
+          <Button className='search-button'>
             Search Property
           </Button>
-          <Button variant='outline'>
+          <Button className='search-button' variant='outline'>
             <ChevronsUpDownIcon />Advanced Search
           </Button>
         </div>
@@ -217,16 +219,14 @@ export default function Search() {
             <PaginationItem>
               <PaginationEllipsis />
             </PaginationItem>
-            <PaginationItem>
-              {paginationIndex + 5 < maxPaginationIndex &&
-                <PaginationItem>
-                  <PaginationLink
-                    onClick={() =>
-                      selectPagination(paginationIndex + 5)}>
-                    {paginationIndex + 5}
-                  </PaginationLink>
-                </PaginationItem>}
-            </PaginationItem>
+            {paginationIndex + 5 < maxPaginationIndex &&
+              <PaginationItem>
+                <PaginationLink
+                  onClick={() =>
+                    selectPagination(paginationIndex + 5)}>
+                  {paginationIndex + 5}
+                </PaginationLink>
+              </PaginationItem>}
             <PaginationItem>
               <PaginationNext onClick={nextPagination} />
             </PaginationItem>
