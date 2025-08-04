@@ -5,11 +5,15 @@
     @apply w-full;
 
     .footer-header {
-      @apply w-full h-96 flex justify-center items-center;
+      @apply w-full h-64 flex justify-center items-center px-6;
+      @apply xl:h-96;
       @apply bg-linear-to-tr from-green-100 from-10% via-pink-50 to-purple-100 to-90%;
 
       .header-title {
-        @apply text-7xl font-[Poppins] font-semibold text-center;
+        @apply text-4xl leading-normal;
+        @apply md:text-5xl;
+        @apply lg:text-6xl;
+        @apply xl:text-7xl font-[Poppins] font-semibold text-center;
       }
     }
 
@@ -20,10 +24,13 @@
     }
 
     .footer-main {
-      @apply w-full h-96 flex flex-1 justify-evenly items-center p-12;
+      @apply w-full flex flex-col flex-1 justify-evenly items-start px-8 py-6 gap-8;
+      @apply sm:flex-row sm:gap-0 sm:items-center;
+      @apply xl:h-96 xl:p-12;
 
       .main-side {
-        @apply h-full flex flex-1 flex-col justify-start items-start gap-16;
+        @apply flex flex-1 flex-col justify-start items-start gap-8;
+        @apply xl:h-full xl:gap-16;
 
         .quote {
           @apply w-4/5 font-[Poppins] text-lg text-primary-foreground/80 select-none;
@@ -47,10 +54,13 @@
       }
 
       .footer-aside {
-        @apply h-full flex flex-1 justify-between items-start mr-12;
+        @apply w-full flex flex-col flex-1 justify-between items-start gap-12 mt-8;
+        @apply sm:w-auto sm:flex-row sm:gap-1 sm:mt-0;
+        @apply xl:mr-12;
 
         .aside-list {
-          @apply flex flex-col gap-6;
+          @apply flex flex-col gap-4 mb-4;
+          @apply xl:gap-6 xl:m-0;
 
           .aside-item a button {
             @apply cursor-pointer;
@@ -60,12 +70,17 @@
     }
 
     .footer-rights {
-      @apply w-full flex justify-center items-center;
+      @apply w-full flex justify-center items-center text-sm;
+      @apply sm:text-base;
     }
 
     .footer-logo {
-      @apply w-full pt-8 flex justify-center pb-8 overflow-hidden;
-      @apply text-[340px] font-[Playfair_Display];
+      @apply w-full h-max pt-8 flex justify-center pb-8 overflow-hidden;
+      @apply text-7xl font-[Playfair_Display];
+      @apply sm:text-[180px];
+      @apply md:text-[220px];
+      @apply lg:text-[280px];
+      @apply xl:text-[340px];
 
       .logo {
         transform: matrix3d(1, 0, 0, 0,
