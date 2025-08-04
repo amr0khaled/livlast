@@ -5,14 +5,22 @@
     @apply -mt-17 relative overflow-hidden mb-4;
 
     .hero-img {
-      @apply object-cover w-[35%] absolute z-10;
+      @apply h-[100%] object-cover absolute z-10;
+      @apply xl:w-[35%];
 
       &:first-of-type {
-        @apply bottom-0 -right-30 w-[40%];
+        @apply -bottom-16 right-0 w-[90%];
+        @apply sm:-right-36;
+        @apply md:-right-3/8;
+        @apply xl:-right-30 xl:w-[40%];
       }
 
       &:last-of-type {
-        @apply top-16 left-0;
+        @apply bottom-0 -left-full;
+        @apply sm:-left-4/12;
+        @apply md:-left-3/12;
+        @apply lg:-left-1/12;
+        @apply xl:top-16 xl:-left-12 xl:w-[30%];
       }
     }
 
@@ -28,11 +36,17 @@
       @apply flex flex-col gap-8;
 
       h1 {
-        @apply text-7xl font-[Playfair_Display] font-bold text-center z-30;
+        @apply text-3xl text-primary font-[Playfair_Display] font-bold text-center z-30;
+        @apply sm:text-5xl;
+        @apply md:text-6xl;
+        @apply lg:text-6xl;
+        @apply xl:text-7xl;
       }
 
       p {
-        @apply text-center font-[Poppins] text-black/60
+        @apply text-sm text-center font-[Poppins] text-black/60;
+        @apply sm:text-base;
+        @apply xl:text-lg;
       }
     }
   }
