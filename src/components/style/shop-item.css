@@ -2,7 +2,9 @@
 
 @layer components {
   .shop-item-card {
-    @apply max-w-80 min-w-72 my-2 mx-2;
+    @apply max-w-72 min-w-48 m-2;
+    /* xl */
+    @apply xl:max-w-80 xl:min-w-72 xl:m-2;
 
     .item-main {
       @apply flex flex-col gap-4;
@@ -16,7 +18,9 @@
       }
 
       .item-title {
-        @apply text-3xl font-[Poppins] font-medium truncate;
+        @apply text-xl font-[Poppins] font-medium truncate;
+        /* xl */
+        @apply xl:text-3xl;
       }
 
       .item-location {
@@ -31,7 +35,9 @@
         @apply flex h-5 gap-3;
 
         .item-info {
-          @apply flex items-center gap-1 text-sm text-black/60;
+          @apply text-[13px];
+          /* xl */
+          @apply flex items-center gap-1 xl:text-sm text-black/60;
 
           svg {
             @apply size-4
