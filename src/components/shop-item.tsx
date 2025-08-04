@@ -49,7 +49,7 @@ export default function ShopItem({ item }: Props) {
     </main>
     <footer className='item-footer'>
       <span className='item-price'>${item.price.toLocaleString('en-US')}</span>
-      <Button size='sm' variant={'outline'}>Invest now</Button>
+      <Button className='item-invest' size='sm' variant={'outline'}>Invest now</Button>
     </footer>
   </section>
 }

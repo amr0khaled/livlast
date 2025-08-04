@@ -2,12 +2,14 @@
 
 @layer components {
   .shop-item-card {
-    @apply max-w-72 min-w-48 m-2;
+    @apply max-w-72 min-w-48;
+    /* sm + md + lg */
+    @apply sm:max-w-56 sm:min-w-52;
     /* xl */
     @apply xl:max-w-80 xl:min-w-72 xl:m-2;
 
     .item-main {
-      @apply flex flex-col gap-4;
+      @apply flex flex-col gap-2 sm:gap-4;
 
       .item-image {
         @apply rounded-xl overflow-hidden;
@@ -18,13 +20,11 @@
       }
 
       .item-title {
-        @apply text-xl font-[Poppins] font-medium truncate;
-        /* xl */
-        @apply xl:text-3xl;
+        @apply text-base md:text-lg font-[Poppins] font-medium truncate;
       }
 
       .item-location {
-        @apply flex gap-1 text-sm text-black/60;
+        @apply flex gap-1 text-[13px] md:text-sm text-black/60;
 
         svg {
           @apply size-4
@@ -32,25 +32,29 @@
       }
 
       .item-details {
-        @apply flex h-5 gap-3;
+        @apply flex h-5 gap-2 sm:gap-1 xl:gap-3;
 
         .item-info {
-          @apply text-[13px];
+          @apply text-sm sm:text-[12px] xl:text-sm;
           /* xl */
-          @apply flex items-center gap-1 xl:text-sm text-black/60;
+          @apply flex items-center gap-1 sm:gap-1 text-black/60;
 
           svg {
-            @apply size-4
+            @apply size-3 sm:size-4
           }
         }
       }
     }
 
     .item-footer {
-      @apply mt-3 flex justify-between;
+      @apply mt-3 flex gap-1 justify-between items-center;
 
       .item-price {
-        @apply text-green-600 font-[Poppins] text-xl
+        @apply text-green-600 font-[Poppins] text-lg xl:text-xl
+      }
+
+      .item-invest {
+        @apply text-[12px];
       }
     }
   }
