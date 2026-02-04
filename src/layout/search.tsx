@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator"
 let items: ShopItemType[] = [
   {
     title: "Modern townhouse white theme",
-    img: '/assets/images/card-1.jpg',
+    img: '/assets/images/card-1.webp',
     location: "San Jose, California",
     price: 3_000_000,
     beds: 2,
@@ -21,7 +21,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Small classic village house",
-    img: '/assets/images/card-2.jpg',
+    img: '/assets/images/card-2.webp',
     location: "Salt Lake City, Utah",
     price: 2_400_000,
     beds: 2,
@@ -30,7 +30,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Downtown modern house with wooden theme",
-    img: '/assets/images/card-3.jpg',
+    img: '/assets/images/card-3.webp',
     location: "San Fransisco, California",
     price: 2_800_000,
     beds: 2,
@@ -39,7 +39,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Decorated white townhouse",
-    img: '/assets/images/card-4.jpg',
+    img: '/assets/images/card-4.webp',
     location: "Los Angeles, California",
     price: 3_00_000,
     beds: 4,
@@ -48,7 +48,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Comfy residential house",
-    img: '/assets/images/card-5.jpg',
+    img: '/assets/images/card-5.webp',
     location: "Queens, New York",
     price: 1_200_000,
     beds: 3,
@@ -57,7 +57,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Small wooden house",
-    img: '/assets/images/card-6.jpg',
+    img: '/assets/images/card-6.webp',
     location: "Phoenix, Arizona",
     price: 20,
     beds: 1,
@@ -66,7 +66,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Stylish modern house",
-    img: '/assets/images/card-7.jpg',
+    img: '/assets/images/card-7.webp',
     location: "Miami, Florida",
     price: 800_000,
     beds: 3,
@@ -75,7 +75,7 @@ let items: ShopItemType[] = [
   },
   {
     title: "Silver-themed modern house",
-    img: '/assets/images/card-8.jpg',
+    img: '/assets/images/card-8.webp',
     location: "Austin, Texas",
     price: 3_800_000,
     beds: 4,

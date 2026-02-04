@@ -3,8 +3,8 @@ import './style/hero.css'
 export default function Hero() {
   return <section className='hero' id='home'>
     <main className='hero-main'>
-      <img className='hero-img' src='/assets/images/hero-2.png' alt='' />
-      <img className='hero-img' src='/assets/images/hero-3.png' alt='' />
+      <img className='hero-img' src='/assets/images/hero-2.webp' alt='' />
+      <img className='hero-img' src='/assets/images/hero-3.webp' alt='' />
       <section className='section-1'>
         <header>
           <h1>
